@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="home.mensagens.MainActivity"
+    android:background="@drawable/menuclaro3">
+
+    <Button
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:id="@+id/btnProximo"
+        android:layout_alignBottom="@+id/txtTexto"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/netx" />
+
+    <Button
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnVoltar"
+        android:layout_alignBottom="@+id/btnProximo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/back"
+        android:layout_alignTop="@+id/btnProximo" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textSize="20sp"
+        android:id="@+id/txtTexto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toobar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnCompartilhar"
+        android:background="@drawable/compartilhar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="36dp"
+        android:layout_height="36dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toobar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/titulo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnProximo"
+        android:layout_alignBottom="@+id/btnFavorito"
+        android:layout_toLeftOf="@+id/btnProximo" />
+
+    <Button
+        android:id="@+id/btnFavorito"
+        android:background="@drawable/starcircle"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/btnCompartilhar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

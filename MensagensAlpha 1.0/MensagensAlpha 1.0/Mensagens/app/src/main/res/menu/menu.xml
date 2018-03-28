@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.root.theilluminati.Illuminati">
+    <item android:id="@+id/compartilhar"
+        android:icon="@drawable/compartilhar"
+        android:title="@string/share"/>
+    android:actionProviderClass="android.widget.ShareActionProvider"/>
+</menu>
